@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB - Places</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="HBNB Logo" class="logo"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="filter-container">
+                <label for="price-filter">Filter by price:</label>
+                <select id="price-filter">
+                    <option value="all">All</option>
+                    <option value="100">Less than $100</option>
+                    <option value="500">Less than $500</option>
+                    <option value="1000">Less than $1000</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="places-list" class="places">
+            <!-- Places will be dynamically added here via JavaScript -->
+            
+            <!-- Sample Place Card (will be replaced by dynamic content) -->
+            <div class="place-card">
+                <img src="images/place1.jpg" alt="Cozy Apartment">
+                <div class="place-info">
+                    <h2>Cozy Apartment in Downtown</h2>
+                    <p class="price">$85 / night</p>
+                    <a href="place.html?id=1" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="place-card">
+                <img src="images/place2.jpg" alt="Beach House">
+                <div class="place-info">
+                    <h2>Beach House with Ocean View</h2>
+                    <p class="price">$120 / night</p>
+                    <a href="place.html?id=2" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="place-card">
+                <img src="images/place3.jpg" alt="Mountain Cabin">
+                <div class="place-info">
+                    <h2>Mountain Cabin Retreat</h2>
+                    <p class="price">$95 / night</p>
+                    <a href="place.html?id=3" class="details-button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HBNB. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

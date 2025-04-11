@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB - Add Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="HBNB Logo" class="logo"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-review-container">
+            <h1>Add Your Review</h1>
+            <div id="place-info" class="place-mini-info">
+                <!-- Place info will be dynamically added here via JavaScript -->
+                <h2>Cozy Apartment in Downtown</h2>
+                <p>$85 / night</p>
+            </div>
+            
+            <div id="add-review" class="add-review">
+                <form id="review-form" class="form">
+                    <div class="form-group">
+                        <label for="review-text">Your Review:</label>
+                        <textarea id="review-text" name="review" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit Review</button>
+                    </div>
+                    <div id="review-error" class="error-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HBNB. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
